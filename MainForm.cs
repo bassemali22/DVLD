@@ -1,4 +1,5 @@
-﻿using System;
+﻿using First_project.People;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,6 +19,8 @@ namespace First_project
 
         private void peopleToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Form frm = new FrmListPeopple();
+            frm.ShowDialog();
         }
 
         private void signOutToolStripMenuItem_Click(object sender, EventArgs e)

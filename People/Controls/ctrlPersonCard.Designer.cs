@@ -1,6 +1,6 @@
 ﻿namespace First_project.People.Controls
 {
-    partial class ctrlPersonInfo
+    partial class ctrlPersonCard
     {
         /// <summary> 
         /// Required designer variable.
@@ -320,6 +320,7 @@
             this.linkLabel1.TabIndex = 39;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "EditPersonInfo";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // sdas
             // 
@@ -331,7 +332,7 @@
             this.sdas.TabIndex = 30;
             this.sdas.Text = "Phone:";
             // 
-            // ctrlPersonInfo
+            // ctrlPersonCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -363,7 +364,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "ctrlPersonInfo";
+            this.Name = "ctrlPersonCard";
             this.Size = new System.Drawing.Size(657, 307);
             this.Load += new System.EventHandler(this.ctrlPersonInfo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

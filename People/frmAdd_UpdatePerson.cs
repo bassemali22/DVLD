@@ -35,9 +35,8 @@ namespace First_project.People
         {
             InitializeComponent();
 
-
-            _Mode = enMode.Update;
             _PersonID = ID; 
+            _Mode = enMode.Update;
         }
         private void _ResetDefualtValues()
         {
@@ -141,7 +140,7 @@ namespace First_project.People
             _ResetDefualtValues();
 
             if (_Mode == enMode.Update)
-                _LoadData();
+                 _LoadData();
         }
 
         private bool _HandlePersonImage()
@@ -250,21 +249,21 @@ namespace First_project.People
 
         }
 
-        //private void llSetImage_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        //{
-        //    openFileDialog1.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.bmp";
-        //    openFileDialog1.FilterIndex = 1;
-        //    openFileDialog1.RestoreDirectory = true;
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            openFileDialog1.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.bmp";
+            openFileDialog1.FilterIndex = 1;
+            openFileDialog1.RestoreDirectory = true;
 
-        //    if (openFileDialog1.ShowDialog() == DialogResult.OK)
-        //    {
-        //        // Process the selected file
-        //        string selectedFilePath = openFileDialog1.FileName;
-        //        pbPersonImage.Load(selectedFilePath);
-        //        llRemove.Visible = true;
-        //        // ...
-        //    }
-        //}
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                // Process the selected file
+                string selectedFilePath = openFileDialog1.FileName;
+                pbPersonImage.Load(selectedFilePath);
+                llRemove.Visible = true;
+                // ...
+            }
+        }
 
         private void llRemoveImage_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -295,10 +294,16 @@ namespace First_project.People
                 pbPersonImage.Image = Resources.Boy;
         }
 
+        private void fileSystemWatcher1_Changed(object sender, FileSystemEventArgs e)
+        {
 
+        }
 
-
-
-
+        private void frmAdd_UpdatePerson_Load(object sender, EventArgs e)
+        {
+            _ResetDefualtValues();
+            if(_Mode == enMode.Update)
+                _LoadData();
+        }
     }
 }
