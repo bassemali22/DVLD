@@ -115,37 +115,39 @@
             this.tlsmCallPerson,
             this.tlsmSendEmail});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(133, 114);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 136);
             // 
             // tlsmShowInfo
             // 
             this.tlsmShowInfo.Name = "tlsmShowInfo";
-            this.tlsmShowInfo.Size = new System.Drawing.Size(132, 22);
+            this.tlsmShowInfo.Size = new System.Drawing.Size(180, 22);
             this.tlsmShowInfo.Text = "Show Info";
             this.tlsmShowInfo.Click += new System.EventHandler(this.tlsmShowInfo_Click);
             // 
             // tlsmEditPerson
             // 
             this.tlsmEditPerson.Name = "tlsmEditPerson";
-            this.tlsmEditPerson.Size = new System.Drawing.Size(132, 22);
+            this.tlsmEditPerson.Size = new System.Drawing.Size(180, 22);
             this.tlsmEditPerson.Text = "Edit";
+            this.tlsmEditPerson.Click += new System.EventHandler(this.tlsmEditPerson_Click);
             // 
             // tlsmDeletePerons
             // 
             this.tlsmDeletePerons.Name = "tlsmDeletePerons";
-            this.tlsmDeletePerons.Size = new System.Drawing.Size(132, 22);
+            this.tlsmDeletePerons.Size = new System.Drawing.Size(180, 22);
             this.tlsmDeletePerons.Text = "Delete";
+            this.tlsmDeletePerons.Click += new System.EventHandler(this.tlsmDeletePerons_Click);
             // 
             // tlsmCallPerson
             // 
             this.tlsmCallPerson.Name = "tlsmCallPerson";
-            this.tlsmCallPerson.Size = new System.Drawing.Size(132, 22);
+            this.tlsmCallPerson.Size = new System.Drawing.Size(180, 22);
             this.tlsmCallPerson.Text = "Call";
             // 
             // tlsmSendEmail
             // 
             this.tlsmSendEmail.Name = "tlsmSendEmail";
-            this.tlsmSendEmail.Size = new System.Drawing.Size(132, 22);
+            this.tlsmSendEmail.Size = new System.Drawing.Size(180, 22);
             this.tlsmSendEmail.Text = "Send Email";
             // 
             // FrmListPeopple

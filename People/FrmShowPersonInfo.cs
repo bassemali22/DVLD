@@ -12,16 +12,20 @@ namespace First_project.People
     public partial class FrmShowPersonInfo : Form
     {
 
-        private int PersonID;
-        public FrmShowPersonInfo(int personID)
+        public FrmShowPersonInfo(int PersonID)
         {
             InitializeComponent();
-            PersonID = personID;
+            ctrlPersonCard1.LoadData(PersonID);
+
+        }
+        public FrmShowPersonInfo(string NationalNo)
+        {
+            InitializeComponent();
+            ctrlPersonCard1.LoadData(NationalNo);
+
         }
 
-        private void FrmShowPersonInfo_Load(object sender, EventArgs e)
-        {
-            ctrlPersonCard1.LoadData(PersonID); 
-        }
+
+
     }
 }

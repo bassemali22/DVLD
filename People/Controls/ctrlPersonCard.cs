@@ -13,12 +13,20 @@ namespace First_project.People.Controls
     public partial class ctrlPersonCard : UserControl
     {
         private clsPerson _Person;
+        private int _PersonID;
       
         public ctrlPersonCard()
         {
             InitializeComponent(); 
         }
-
+        public int PersonID
+        {
+            get { return _PersonID; }
+        }
+        public clsPerson selectPersonInfo
+        {
+            get { return _Person; }
+        }
         public void LoadData(int PersonID)
         {
             _Person = clsPerson.Find(PersonID);
@@ -43,6 +51,7 @@ namespace First_project.People.Controls
 
         private void _FillPersonInfo()
         {
+            _PersonID = _Person.PersonID;
             lblPersonID.Text = _Person.PersonID.ToString();
             lblName.Text = _Person.FullName;
             lblNationalNo.Text = _Person.NationalNo;
@@ -55,11 +64,7 @@ namespace First_project.People.Controls
             
         }
 
-        private void ctrlPersonInfo_Load(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             frmAdd_UpdatePerson frm = new frmAdd_UpdatePerson(_Person.PersonID);

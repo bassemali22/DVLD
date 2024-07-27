@@ -1,4 +1,5 @@
 ﻿using First_project.People;
+using First_project.Users;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -32,7 +33,8 @@ namespace First_project
 
         private void usersToolStripMenuItem_Click(object sender, EventArgs e)
         {
-       
+           Form frm = new FrmUsersList();
+            frm.ShowDialog(); 
         }
 
         private void drivingToolStripMenuItem_Click(object sender, EventArgs e)
@@ -48,6 +50,18 @@ namespace First_project
         private void applicationsToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void changPasswordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmChagePassword frm = new FrmChagePassword(1);
+            frm.ShowDialog();
+        }
+
+        private void currentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmUserInfo frm = new FrmUserInfo(1);
+            frm.ShowDialog();   
         }
     }
 }

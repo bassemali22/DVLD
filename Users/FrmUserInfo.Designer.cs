@@ -1,6 +1,6 @@
-﻿namespace First_project.People
+﻿namespace First_project.Users
 {
-    partial class FrmShowPersonInfo
+    partial class FrmUserInfo
     {
         /// <summary>
         /// Required designer variable.
@@ -28,31 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ctrlPersonCard1 = new First_project.People.Controls.ctrlPersonCard();
+            this.ctrlUserCard1 = new First_project.Users.Consrols.ctrlUserCard();
             this.SuspendLayout();
             // 
-            // ctrlPersonCard1
+            // ctrlUserCard1
             // 
-            this.ctrlPersonCard1.Location = new System.Drawing.Point(17, 20);
-            this.ctrlPersonCard1.Name = "ctrlPersonCard1";
-            this.ctrlPersonCard1.Size = new System.Drawing.Size(657, 307);
-            this.ctrlPersonCard1.TabIndex = 0;
+            this.ctrlUserCard1.Location = new System.Drawing.Point(0, 0);
+            this.ctrlUserCard1.Name = "ctrlUserCard1";
+            this.ctrlUserCard1.Size = new System.Drawing.Size(784, 417);
+            this.ctrlUserCard1.TabIndex = 0;
             // 
-            // FrmShowPersonInfo
+            // FrmUserInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(697, 347);
-            this.Controls.Add(this.ctrlPersonCard1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "FrmShowPersonInfo";
-            this.Text = "FrmShowPersonInfo";
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ctrlUserCard1);
+            this.Name = "FrmUserInfo";
+            this.Text = "FrmUserInfo";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Controls.ctrlPersonCard ctrlPersonCard1;
+        private Consrols.ctrlUserCard ctrlUserCard1;
     }
 }

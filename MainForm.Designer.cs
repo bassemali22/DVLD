@@ -175,12 +175,14 @@
             this.currentToolStripMenuItem.Name = "currentToolStripMenuItem";
             this.currentToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
             this.currentToolStripMenuItem.Text = "Current User Info";
+            this.currentToolStripMenuItem.Click += new System.EventHandler(this.currentToolStripMenuItem_Click);
             // 
             // changPasswordToolStripMenuItem
             // 
             this.changPasswordToolStripMenuItem.Name = "changPasswordToolStripMenuItem";
             this.changPasswordToolStripMenuItem.Size = new System.Drawing.Size(210, 26);
             this.changPasswordToolStripMenuItem.Text = "Chang Password";
+            this.changPasswordToolStripMenuItem.Click += new System.EventHandler(this.changPasswordToolStripMenuItem_Click);
             // 
             // signOutToolStripMenuItem
             // 
@@ -189,14 +191,14 @@
             this.signOutToolStripMenuItem.Text = "Sign Out";
             this.signOutToolStripMenuItem.Click += new System.EventHandler(this.signOutToolStripMenuItem_Click);
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = "Form1";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

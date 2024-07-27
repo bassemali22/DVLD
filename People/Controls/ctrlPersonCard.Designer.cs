@@ -366,7 +366,6 @@
             this.Controls.Add(this.label1);
             this.Name = "ctrlPersonCard";
             this.Size = new System.Drawing.Size(657, 307);
-            this.Load += new System.EventHandler(this.ctrlPersonInfo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();

@@ -47,7 +47,26 @@ namespace First_project.People
         {
             Form frm = new FrmShowPersonInfo((int)dgvPeople.CurrentRow.Cells[0].Value);
             frm.ShowDialog();
+
             _RefreshListPeople();
+        }
+
+        private void tlsmEditPerson_Click(object sender, EventArgs e)
+        {
+            frmAdd_UpdatePerson frm = new frmAdd_UpdatePerson((int)dgvPeople.CurrentRow.Cells[0].Value);
+            frm.ShowDialog();
+            _RefreshListPeople();
+
+
+        }
+
+        private void tlsmDeletePerons_Click(object sender, EventArgs e)
+        {
+            if(clsPerson.DeletePerson((int)dgvPeople.CurrentRow.Cells[0].Value))
+            {
+                MessageBox.Show("The Person Delteted ");
+                _RefreshListPeople();
+            }
         }
     }
 }
