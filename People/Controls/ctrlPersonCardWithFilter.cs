@@ -13,7 +13,7 @@ namespace First_project.People.Controls
     public partial class ctrlPersonCardWithFilter : UserControl
     {
         public event Action<int> OnPersonSelected;
-
+  
         protected virtual void PersonSelected(int personId)
         {
             Action <int> handler = OnPersonSelected;
@@ -52,7 +52,13 @@ namespace First_project.People.Controls
         {
             cbFilter.SelectedIndex = 0; 
         }
+        public void LoadPersonInfo(int PersonID)
+        {
+            cbFilter.SelectedIndex = 0;
+            txtFilterBy.Text = PersonID.ToString();
+            _Findnow();
 
+        }
         private void _Findnow()
         {
 
@@ -78,6 +84,11 @@ namespace First_project.People.Controls
         private void btnSave_Click(object sender, EventArgs e)
         {
             _Findnow();
+        }
+
+        private void grbFillter_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

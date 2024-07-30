@@ -63,37 +63,38 @@
             this.callToolStripMenuItem,
             this.sendEmailToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(154, 114);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 136);
             // 
             // txtShowUserInfo
             // 
             this.txtShowUserInfo.Name = "txtShowUserInfo";
-            this.txtShowUserInfo.Size = new System.Drawing.Size(153, 22);
+            this.txtShowUserInfo.Size = new System.Drawing.Size(180, 22);
             this.txtShowUserInfo.Text = "Show User Info";
             this.txtShowUserInfo.Click += new System.EventHandler(this.txtShowUserInfo_Click);
             // 
             // txtEdit
             // 
             this.txtEdit.Name = "txtEdit";
-            this.txtEdit.Size = new System.Drawing.Size(153, 22);
+            this.txtEdit.Size = new System.Drawing.Size(180, 22);
             this.txtEdit.Text = "Edit";
+            this.txtEdit.Click += new System.EventHandler(this.txtEdit_Click);
             // 
             // txtDelete
             // 
             this.txtDelete.Name = "txtDelete";
-            this.txtDelete.Size = new System.Drawing.Size(153, 22);
+            this.txtDelete.Size = new System.Drawing.Size(180, 22);
             this.txtDelete.Text = "Delete";
             // 
             // callToolStripMenuItem
             // 
             this.callToolStripMenuItem.Name = "callToolStripMenuItem";
-            this.callToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.callToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.callToolStripMenuItem.Text = "Call";
             // 
             // sendEmailToolStripMenuItem
             // 
             this.sendEmailToolStripMenuItem.Name = "sendEmailToolStripMenuItem";
-            this.sendEmailToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.sendEmailToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sendEmailToolStripMenuItem.Text = "Send Email";
             // 
             // btnAddNew

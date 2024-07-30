@@ -1,6 +1,6 @@
 ﻿namespace First_project
 {
-    partial class MainForm
+    partial class frmMainForm
     {
         /// <summary>
         /// Required designer variable.

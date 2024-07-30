@@ -1,4 +1,5 @@
-﻿using First_project.People;
+﻿using First_project.GlobalClasses;
+using First_project.People;
 using First_project.Users;
 using System;
 using System.Collections.Generic;
@@ -11,11 +12,13 @@ using System.Windows.Forms;
 
 namespace First_project
 {
-    public partial class MainForm : Form
+    public partial class frmMainForm : Form
     {
-        public MainForm()
+        private Form _Frm;
+        public frmMainForm( frmloginScreen frm )
         {
             InitializeComponent();
+            _Frm = frm; 
         }
 
         private void peopleToolStripMenuItem_Click(object sender, EventArgs e)
@@ -26,8 +29,8 @@ namespace First_project
 
         private void signOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form frm = new loginScreen();
-            frm.ShowDialog();
+            clsGlobal.User = null;
+            _Frm.ShowDialog();
             this.Close();
         }
 
@@ -54,7 +57,7 @@ namespace First_project
 
         private void changPasswordToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmChagePassword frm = new FrmChagePassword(1);
+            FrmChagePassword frm = new FrmChagePassword(clsGlobal.User.UserID);
             frm.ShowDialog();
         }
 

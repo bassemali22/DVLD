@@ -42,14 +42,8 @@ namespace First_project.Users.Consrols
             ctrlPersonCard1.LoadData(_User.PersonID);
             lblUserID.Text = _User.UserID.ToString();
             lblUserName.Text = _User.UserName;
-            if(_User.IsActive) 
-            {
-                lblIsActive.Text = "Yes";
-            }
-            else
-            {
-                lblIsActive.Text = "No";
-            }
+            lblIsActive.Text = (_User.IsActive) ? "Yse" : "No"; 
+            
 
         }
      

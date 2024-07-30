@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Bissnus_Layer;
+using First_project.GlobalClasses;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,17 +11,32 @@ using System.Windows.Forms;
 
 namespace First_project
 {
-    public partial class loginScreen : Form
+    public partial class frmloginScreen : Form
     {
-        public loginScreen()
+        public frmloginScreen()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form frm = new MainForm();
-            frm .ShowDialog();
+             clsUsers User = clsUsers.FindUserByUserNameAndPassword(txtUserName.Text.Trim(), txtPassWord.Text.Trim());
+            {
+                if(User!= null)
+                {
+                    clsGlobal.User = User;
+                    this.Hide();
+                    frmMainForm frm = new frmMainForm(this);
+                    frm.ShowDialog();
+                }
+                if(!User.IsActive)
+                {
+                    txtUserName.Focus();
+                    MessageBox.Show("Your Account Is Not Active, Contact Admin");
+                    return;
+                }
+              
+            }
         }
 
         private void textBox1_Validating(object sender, CancelEventArgs e)
@@ -51,5 +68,7 @@ namespace First_project
                 errorProvider1.SetError(txtPassWord, "");
             }
         }
+
+
     }
 }

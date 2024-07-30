@@ -16,7 +16,7 @@ namespace First_project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new loginScreen ());
+            Application.Run(new frmloginScreen ());
         }
     }
 }

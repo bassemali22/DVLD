@@ -1,6 +1,6 @@
 ﻿namespace First_project
 {
-    partial class loginScreen
+    partial class frmloginScreen
     {
         /// <summary>
         /// Required designer variable.

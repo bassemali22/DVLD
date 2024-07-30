@@ -46,5 +46,12 @@ namespace First_project.Users
             // Refreshing
             _RefreshListUser();
         }
+
+        private void txtEdit_Click(object sender, EventArgs e)
+        {
+            FrmAdd_UpdateUser frm = new FrmAdd_UpdateUser((int)dgvUserInfo.CurrentRow.Cells[0].Value);  
+            frm .ShowDialog();
+            _RefreshListUser();
+        }
     }
 }

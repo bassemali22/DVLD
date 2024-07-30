@@ -106,7 +106,8 @@
             this.grbFillter.Size = new System.Drawing.Size(665, 80);
             this.grbFillter.TabIndex = 6;
             this.grbFillter.TabStop = false;
-            this.grbFillter.Text = "groupBox1";
+            this.grbFillter.Text = "Filter";
+            this.grbFillter.Enter += new System.EventHandler(this.grbFillter_Enter);
             // 
             // ctrlPersonCardWithFilter
             // 

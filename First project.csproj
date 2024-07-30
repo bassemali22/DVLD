@@ -43,18 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GlobalClasses\clsGlobal.cs" />
     <Compile Include="GlobalClasses\clsUtilties.cs" />
-    <Compile Include="MainForm.cs">
+    <Compile Include="MainForm\frmMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <Compile Include="MainForm\frmMainForm.Designer.cs">
+      <DependentUpon>frmMainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="loginScreen.cs">
+    <Compile Include="LoginScreen\frmloginScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="loginScreen.Designer.cs">
-      <DependentUpon>loginScreen.cs</DependentUpon>
+    <Compile Include="LoginScreen\frmloginScreen.Designer.cs">
+      <DependentUpon>frmloginScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="People\Controls\ctrlPersonCard.cs">
       <SubType>UserControl</SubType>
@@ -124,11 +125,11 @@
     <Compile Include="Users\FrmUsersList.Designer.cs">
       <DependentUpon>FrmUsersList.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <EmbeddedResource Include="MainForm\frmMainForm.resx">
+      <DependentUpon>frmMainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="loginScreen.resx">
-      <DependentUpon>loginScreen.cs</DependentUpon>
+    <EmbeddedResource Include="LoginScreen\frmloginScreen.resx">
+      <DependentUpon>frmloginScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="People\Controls\ctrlPersonCard.resx">
       <DependentUpon>ctrlPersonCard.cs</DependentUpon>
